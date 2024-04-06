@@ -1,18 +1,22 @@
-import AppBar from "./components/AppBar/AppBar";
-import BoardBar from "./components/BoardBar/BoardBar";
-import BoardContent from "./components/BoardContent/BoardContent";
+import Proyecto from "./components/Proyecto/Proyecto";
+import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 
 
 function App() {
   return (
     <div className="trello-master">
-
-      <AppBar />
-      <BoardBar />
-      <BoardContent />
-
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Proyecto />} />
+        
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;
