@@ -1,9 +1,24 @@
 @import '../../settings.scss';
 
-.navbar-app {
+.navbar{
+    background-color: $navbar-app-bg-color !important;
     padding-left: $gap;
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    background-color: $navbar-app-bg-color;
+    
+
+    #navbarNav{
+        
+        .navbar-nav{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            .nav-item{
+
+            }
+        }
+    } 
 }
+
+

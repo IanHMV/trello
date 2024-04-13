@@ -12,7 +12,7 @@ import { v4 as uuidv4 } from 'uuid';
 const Column = (props) => {
 
     const {column, onCardDrop, onUpdateColumn} = props;
-    const cards = mapOrder(column.cards, column.cardOrder, 'id' );
+    const cards = column.cards ? mapOrder(column.cards, column.cardOrder, 'id') : [];
 
     const [isShowModalDelete, setShowModalDelete] = useState(false);
     const [titleColumn, setTitleColumn]=useState("");
